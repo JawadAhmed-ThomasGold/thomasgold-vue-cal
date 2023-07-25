@@ -1,12 +1,14 @@
 {
-  "name": "vue-cal",
+  "name": "@thomasgoldsolutions/vue-cal",
   "version": "4.8.1",
   "description": "A Vue JS full calendar, no dependency, no BS. :metal:",
   "author": "Antoni Andre <antoniandre.web@gmail.com>",
   "homepage": "https://antoniandre.github.io/vue-cal",
-  "repository": "https://github.com/antoniandre/vue-cal",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoniandre/vue-cal.git"
+  },
   "license": "MIT",
-  "funding": "https://github.com/sponsors/antoniandre",
   "main": "dist/vue-cal.cjs.js",
   "unpkg": "dist/vue-cal.iife.js",
   "jsdelivr": "dist/vue-cal.iife.js",
@@ -67,5 +69,11 @@
   },
   "peerDependencies": {
     "vue": "^2.6.14 || ^3.2.0"
+  },
+  "bugs": {
+    "url": "https://github.com/antoniandre/vue-cal/issues"
+  },
+  "directories": {
+    "doc": "docs"
   }
 }
