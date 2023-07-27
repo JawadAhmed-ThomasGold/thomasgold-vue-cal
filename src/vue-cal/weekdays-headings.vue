@@ -54,6 +54,7 @@ export default {
       let todayFound = false
       const headings = this.weekDays.map((cell, i) => {
         const date = this.utils.date.addDays(this.view.startDate, i)
+        console.log('weekdays headings', date)
 
         return {
           hide: cell.hide,
