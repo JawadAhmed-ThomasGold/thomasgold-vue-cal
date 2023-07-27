@@ -2,7 +2,7 @@ var S = Object.defineProperty;
 var V = (t, e, l) => e in t ? S(t, e, { enumerable: !0, configurable: !0, writable: !0, value: l }) : t[e] = l;
 var T = (t, e, l) => (V(t, typeof e != "symbol" ? e + "" : e, l), l);
 /**
-  * thomasgold-vue-cal v4.8.1
+  * thomasgold-vue-cal v4.8.9
   * (c) 2023 Antoni Andre <antoniandre.web@gmail.com>
   * @license MIT
   */
