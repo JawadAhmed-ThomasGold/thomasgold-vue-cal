@@ -10,6 +10,7 @@
         xsmall
         :selected-date="selectedDate"
         hide-view-selector
+        startWeekOnSunday
         :time="false"
         :transitions="false"
         active-view="month"
@@ -26,6 +27,7 @@
         :time-from="8 * 60"
         :time-to="19 * 60"
         :split-days="demoExample.splits"
+        startWeekOnSunday
         sticky-split-labels
         :editable-events="demoExample.editable"
         :events="demoExample.events"
