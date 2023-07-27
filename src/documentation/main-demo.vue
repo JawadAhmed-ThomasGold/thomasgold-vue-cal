@@ -22,7 +22,6 @@
     .grow.mx2(style="max-width: 800px")
       //- Full-power calendar.
       vue-cal.demo.full-cal.vuecal--full-height-delete(
-        hide-weekends
         :selected-date="selectedDate"
         :time-from="8 * 60"
         :time-to="19 * 60"
