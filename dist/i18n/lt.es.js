@@ -1,5 +1,5 @@
 /**
-  * thomasgold-vue-cal v4.8.11
+  * thomasgold-vue-cal v4.8.12
   * (c) 2023 Antoni Andre <antoniandre.web@gmail.com>
   * @license MIT
   */
