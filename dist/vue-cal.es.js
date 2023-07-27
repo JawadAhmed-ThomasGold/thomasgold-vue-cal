@@ -3,7 +3,7 @@ var re = (e, t, i) => t in e ? oe(e, t, { enumerable: !0, configurable: !0, writ
 var W = (e, t, i) => (re(e, typeof t != "symbol" ? t + "" : t, i), i);
 import { openBlock as h, createElementBlock as c, Fragment as T, renderList as S, normalizeClass as b, normalizeStyle as $, createVNode as U, Transition as R, withCtx as g, createElementVNode as k, renderSlot as w, toDisplayString as f, createCommentVNode as v, createTextVNode as M, resolveComponent as j, createBlock as H, resolveDynamicComponent as de, createSlots as X, withKeys as Z, withModifiers as L, TransitionGroup as ue, normalizeProps as J, mergeProps as Q } from "vue";
 /**
-  * thomasgold-vue-cal v4.8.10
+  * thomasgold-vue-cal v4.8.11
   * (c) 2023 Antoni Andre <antoniandre.web@gmail.com>
   * @license MIT
   */
@@ -128,7 +128,7 @@ const ve = { class: "vuecal__flex vuecal__weekdays-headings" }, me = ["onClick"]
     return [];
   let e = !1;
   return this.weekDays.map((t, i) => {
-    const n = this.utils.date.addDays(this.view.startDate, this.vuecal.startWeekOnSunday && this.vuecal.hideWeekends ? i - 1 : i);
+    const n = this.utils.date.addDays(this.view.startDate, this.vuecal.startWeekOnSunday ? i + 1 : i);
     return { hide: t.hide, full: t.label, small: t.short || t.label.substr(0, 3), xsmall: t.short || t.label.substr(0, 1), ...this.view.id === "week" ? { dayOfMonth: n.getDate(), date: n, today: !e && this.utils.date.isToday(n) && !e++ } : {} };
   });
 }, cellWidth() {
@@ -913,7 +913,7 @@ A valid view must be one of: ${ie.join(", ")}.`), e = "week"), this.enabledViews
       n = !1;
       const s = this.view.startDate, o = this.weekDays;
       t = o.map((a, d) => {
-        const r = e.addDays(s, this.startWeekOnSunday && this.hideWeekends ? d - 1 : d), u = new Date(r);
+        const r = e.addDays(s, this.startWeekOnSunday ? d + 1 : d), u = new Date(r);
         u.setHours(23, 59, 59, 0);
         const m = (r.getDay() || 7) - 1;
         return { startDate: r, formattedDate: e.formatDateLite(r), endDate: u, today: !n && e.isToday(r) && !n++, specialHours: this.specialDayHours[m] || [] };
