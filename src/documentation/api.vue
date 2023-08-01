@@ -90,7 +90,7 @@ div
             "day": "Day",
             "today": "Today",
             "noEvent": "No Event",
-            "allDay": "All day",
+            "allDay": "Day",
             "deleteEvent": "Delete",
             "createEvent": "Create an event",
             "dateFormat": "dddd D MMMM YYYY"
